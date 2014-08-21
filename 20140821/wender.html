@@ -109,11 +109,26 @@
 					text-align:center;
 					}
 
-					/* type */
-					.arrow-big {
-
+					/* components */
+					.background-line {
+					background-repeat: repeat-y;
+					background-position: 50px center;
 					}
 
+					.transport-icon {
+					background-repeat: no-repeat;
+					background-position: center center;
+					width: 100px;
+					height: 60px;
+					}
+
+					.subway-icon {
+					color: #ffffff;
+					}
+
+					.subway-icon.a-train {
+					background-color: #2850AD;
+					}
 
 					/* blocks */
 					.email-container {
@@ -131,7 +146,33 @@
 					}
 
 					.email-footer {
+					background-color: #000000;
+					color: #ffffff;
+					}
 
+					.show-row {
+					background-color: #ffffff;
+					}
+
+					.text-row {
+					background-color: #ffffff;
+					}
+
+					.food-row,
+					.coffee-row {
+
+					}
+
+					.food-row {
+					background-color: #ff5a39;
+					}
+
+					.coffee-row {
+					background-color: #c1b393;
+					}
+
+					.transport-row {
+					background-color: #ffffff;
 					}
 
 					/* custom */
@@ -146,7 +187,50 @@
 					padding-bottom:20px;
 					}
 
+					.food-row h2,
+					.coffee-row h2,
+					.food-row h4,
+					.coffee-row h4 {
+					color: #ffffff;
+					}
 
+					.food-row .arrow,
+					.coffee-row .arrow {
+					margin-left: 30px;
+					}
+
+					.food-row .food-img,
+					.coffee-row .food-img {
+					background-repeat: no-repeat;
+					background-position: 250px center;
+					}
+
+					.food-row h3 {
+					color: #BF0000;
+					}
+
+					.coffee-row h3 {
+					color: #635742;
+					}
+
+					.show-row .arrow {
+					margin-left: 0;
+					}
+
+					.show-row h1,
+					.show-row h3 {
+					color: #590dff;
+					}
+
+					.email-footer h6 {
+					font-weight: normal;
+					}
+
+					.email-footer .fine-print {
+					text-align: center;
+					color: #606060;
+					letter-spacing: 3px;
+					}
 
 
 					 @media only screen and (max-width:480px){
@@ -155,21 +239,17 @@
 				</style>
 		</head>
 		<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
-
 			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="content-wrapper">
 					 <tr>
 							 <td align="center" valign="top">
-
 									<!-- header -->
 									<table border="0" class="email-header">
 										 <tr>
-
 											 <!-- left column-->
 												 <td class="header header-left two-thirds">
 												 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/76e1cf0c-ab97-4ea4-aadf-9cd30b193670.png">
 											 	</td>
 											 	<!-- /left column-->
-
 											 	<!-- right column-->
 												 <td valign="top" class="header header-right one-third">
 													 <table>
@@ -199,16 +279,14 @@
 													</table>
 												 </td>
 												 <!-- /right column-->
-
 										 </tr>
 									</table>
 									<!-- /header -->
 
 							 		<!-- show row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #ffffff;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row content-row">
 											 <tr>
 													 <td align="center" valign="top">
-
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" width="600" class="content-inner" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																 <tr>
@@ -216,68 +294,71 @@
 																			<img class="arrow-big" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png">
 																	 </td>
 																	 <td>
-																		 <h3 style="color:#590dff !important;">let's go!</h3>
+																		 <h3>let's go!</h3>
 																	 </td>
 																 </tr>
 															 </table>
 															 <!-- /content inner -->
-
 													 </td>
 											 </tr>
 									 </table>
 									 <!-- /show row -->
 
 							 		<!-- text row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #ffffff;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="text-row content-row">
 											 <tr>
 													 <td align="center" valign="top">
-
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="padding-top:100px;padding-bottom:100px;background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg') repeat-y 50px center;">
 																 <tr>
 																	 <td align="center" valign="top">
-																		 <a href="https://www.youtube.com/watch?v=bpBP9dALcWw"><h1>wakeup</h1></a>
+																		<a href="https://www.youtube.com/watch?v=bpBP9dALcWw">
+																		 	<h1>wakeup</h1>
+																	 	</a>
 																	 </td>
 																 </tr>
 															 </table>
 															 <!-- /content inner -->
-
 													 </td>
 											 </tr>
 									 </table>
 									 <!-- /text row -->
 
 							 		<!-- coffee row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #c1b393;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="coffee-row content-row background-line">
 											 <tr>
 													 <td align="center" valign="top">
-
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="padding-top:100px;padding-bottom:100px;background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/5edeb00b-052b-4e4b-99f5-107fc9eea279.jpg') repeat-y 50px center;">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/5edeb00b-052b-4e4b-99f5-107fc9eea279.jpg');">
 																	 <tr>
-																		 <td align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/aa1ebb15-f5f3-4ac0-85a5-aa7bbd1549c1.png') no-repeat 250px center;">
-																				 <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/b27d2bcb-36f4-416a-a052-0845e719abdb.png" width="39" height="30">
+																		 <td>
+																			<!-- arrow -->
+																			<img class="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/b27d2bcb-36f4-416a-a052-0845e719abdb.png">
 																		 </td>
 																		 <td>
-																			 <h3 style="color:#635742 !important;">have an iced coffee</h3>
+																			 <h3>get some lunch (or brunch)</h3>
 																		 </td>
 																	 </tr>
-																	 <tr>
-																		<td colspan="2" align="left" valign="top" style="padding-top:30px;padding-bottom:60px;">
-																			<a href="http://www.groundsupportcafe.com"><h2>Ground Support</h2></a>
-																			<a href="https://www.google.com/maps/preview?client=safari&oe=UTF-8&q=399+West+Broadway+New+York,+NY+10012&ie=UTF-8&hq=&hnear=0x89c2598c15290ddf:0x1c05b6680aefc42e,399+W+Broadway,+New+York,+NY+10012&gl=us&ei=JK3OU8DyHoPhoAS8gYLoCg&ved=0CB4Q8gEwAA"><h4 style="color:#ffffff !important;">399 W Broadway</h4></a>
-																			</td>
+																	 <!-- photo -->
+																	 <tr class="food-img" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/aa1ebb15-f5f3-4ac0-85a5-aa7bbd1549c1.png');">
+																		<td colspan="2" align="left" valign="top">
+																			<a href="http://www.groundsupportcafe.com">
+																				<h2>Ground Support</h2>
+																			</a>
+																			<a href="https://www.google.com/maps/preview?client=safari&oe=UTF-8&q=399+West+Broadway+New+York,+NY+10012&ie=UTF-8&hq=&hnear=0x89c2598c15290ddf:0x1c05b6680aefc42e,399+W+Broadway,+New+York,+NY+10012&gl=us&ei=JK3OU8DyHoPhoAS8gYLoCg&ved=0CB4Q8gEwAA">
+																				<h4>399 W Broadway</h4>
+																			</a>
+																		</td>
 																	 </tr>
 															 </table>
 															 <!-- /content inner -->
-
 													 </td>
 											 </tr>
 									 </table>
 									 <!-- /coffee row -->
 
 							 		<!-- show row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #ffffff;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row content-row">
 											 <tr>
 													 <td align="center" valign="top">
 
@@ -285,16 +366,16 @@
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																 <tr>
 																	 <td align="center" valign="top">
-																		 <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png" width="75" height="59">
+																		 <img class="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png">
 																	 </td>
 																	 <td>
-																		 <h3 style="color:#590dff !important;">go see</h3>
+																		 <h3>go see</h3>
 																	 </td>
 																 </tr>
 																 <tr>
 																	 <td align="left" colspan="2" valign="top" style="padding-top:50px;padding-bottom:50px;background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/7f34573a-2887-4192-9c9a-1311f16acce2.jpg') no-repeat right center;">
 													          <a href="http://unti-tled.com/current/relph_payne-gavin_brown/">
-													          	<h1 style="color:#590dff !important;">Relph & Paine</h1>
+													          	<h1>Relph & Paine</h1>
 												          	</a>
 													          <a href="http://gavinbrown.biz">
 													          	<h4>Gavin Brown</h4>
@@ -313,45 +394,45 @@
 									 <!-- /show row -->
 
 							 		<!-- food row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #ff5a39;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="food-row content-row background-line">
 											 <tr>
 													 <td align="center" valign="top">
-
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="padding-top:100px;padding-bottom:100px;background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg')repeat-y 50px center;">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg');">
 																	 <tr>
-																		 <td align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/e5eb9f84-27fe-4421-ad97-06f19c71dad6.png') no-repeat 250px center;" width="39" height="30">
+																		 <td>
+																		 	<!-- arrow -->
+																			 <img class="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/de3eab5e-5bc0-4da4-a8ea-33829b14631b.png">
 																		 </td>
 																		 <td>
-																			 <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/de3eab5e-5bc0-4da4-a8ea-33829b14631b.png" width="39" height="30">
-																		 </td>
-																		 <td>
-																			 <h3 style="color:#BF0000 !important;">get some lunch (or brunch)</h3>
+																			 <h3>get some lunch (or brunch)</h3>
 																		 </td>
 																	 </tr>
-																	 <tr>
-																		<td colspan="2" align="left" valign="top" style="padding-top:30px;padding-bottom:60px;">
+																	 <!-- photo -->
+																	 <tr class="food-img" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/e5eb9f84-27fe-4421-ad97-06f19c71dad6.png');">
+																		<td colspan="2" align="left" valign="top">
 																			<a href="http://www.groundsupportcafe.com"><h2>Ground Support</h2></a>
-																			<a href="https://www.google.com/maps/preview?client=safari&oe=UTF-8&q=399+West+Broadway+New+York,+NY+10012&ie=UTF-8&hq=&hnear=0x89c2598c15290ddf:0x1c05b6680aefc42e,399+W+Broadway,+New+York,+NY+10012&gl=us&ei=JK3OU8DyHoPhoAS8gYLoCg&ved=0CB4Q8gEwAA"><h4 style="color:#ffffff !important;">399 W Broadway</h4></a>
-																			</td>
+																			<a href="https://www.google.com/maps/preview?client=safari&oe=UTF-8&q=399+West+Broadway+New+York,+NY+10012&ie=UTF-8&hq=&hnear=0x89c2598c15290ddf:0x1c05b6680aefc42e,399+W+Broadway,+New+York,+NY+10012&gl=us&ei=JK3OU8DyHoPhoAS8gYLoCg&ved=0CB4Q8gEwAA">
+																				<h4>399 W Broadway</h4>
+																			</a>
+																		</td>
 																	 </tr>
 															 </table>
 															 <!-- /content inner -->
-
 													 </td>
 											 </tr>
 									 </table>
 									 <!-- /food row -->
 
 							 		<!-- transport row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #ffffff;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transport-row content-row">
 											 <tr>
 													 <td align="center" valign="top">
 
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="padding-top:100px;padding-bottom:0px;background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																	 <tr>
-																		 <td align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92de2166-1ed9-4236-8a73-5167c3d7e4c5.png') no-repeat center center;background-color:#2850AD;" width="39" height="30">
+																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92de2166-1ed9-4236-8a73-5167c3d7e4c5.png');">
 																		 	<h5>A</h5>
 																		 </td>
 																		 <td>
@@ -367,17 +448,44 @@
 									 <!-- /transport row -->
 
 							 		<!-- footer row -->
-									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-row" style="background-color: #000000;color:#ffffff;">
+									 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-footer">
 											 <tr>
 													 <td align="center" valign="top">
 
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner fine-print">
 																	 <tr>
-																			 <td align="center" valign="top">
-																					 <a class="utilityLink" href="*|UNSUB|*">unsubscribe</a><br><br>
-																					*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+																			 <td colspan="3">
+																				 <h6>invite your friends</h6>
 																			 </td>
+																	 </tr>
+																	 <tr>
+																		 <td>
+																			 <a href="http://www.unti-tled.com">
+																			 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/bbf145de-f55b-4bac-b672-f77f4aa05e9a.png">
+																		 	</a>
+																		 </td>
+																		 <td>
+																			 <a href="https://twitter.com/_tled">
+																			 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92ea86fb-4943-40c1-9b77-c56bc427f5d1.png">
+																		 	</a>
+																		 </td>
+																		 <td>
+																			 <a href="*|FORWARD|*">
+																			 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/38ad78cc-ddd6-402d-9c7c-10d27686eda5.png">
+																		 	</a>
+																		 </td>
+																	 </tr>
+																	 <tr>
+																		 <td>
+											                <br>
+											                <strong>send all love letters to:</strong><br>
+											                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*<br>
+											                <br>
+											                <a class="utilityLink" href="*|UNSUB|*">stop getting these emails</a><br>or <a class="utilityLink" href="*|UPDATE_PROFILE|*">update your preferences</a>&nbsp;<br>
+											                <br>
+											                *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+																		 </td>
 																	 </tr>
 															 </table>
 															 <!-- /content inner -->
@@ -386,7 +494,6 @@
 											 </tr>
 									 </table>
 									 <!-- /footer row -->
-
 
 							 </td>
 					 </tr>

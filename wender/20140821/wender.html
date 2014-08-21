@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 		<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>*|MC:SUBJECT|*</title>
 				<!-- if you write your styles here you'll need to run them through a CSS inliner -->
 				<style type="text/css">
@@ -10,17 +9,27 @@
 					body {
 					height:100%;
 					width:100%;
+					min-width:100%;
 					background-color:#ffffff;
 					font-family:'helvetica-neue',helvetica,sans-serif;
-					margin:0;
+					color:#000000;
 					}
-
+          
+          .content-wrapper {
+            width:100%
+            
+          }
+          
 					a {
 					text-decoration: none;
 					color: inherit;
 					}
 					
 					hr {
+					  background-color: #000000;
+					  color: #000000;
+					  border: none;
+					  height:1px;
   					margin: 30px 0px 30px 0px;
 					}
 
@@ -87,6 +96,7 @@
 					line-height:125%;
 					text-transform:uppercase;
 					letter-spacing:4px;
+					
 					}
 
 					h4 {
@@ -98,6 +108,7 @@
 					line-height:100%;
 					text-transform:uppercase;
 					letter-spacing:2px;
+					color:#000000;
 					}
 
 					h5 {
@@ -125,8 +136,16 @@
 					text-align:center;
 					margin:20px;
 					}
+					
+					
+					
 
 					/* components */
+					
+					.logo {
+  					width: 100%;
+					}
+					
 					.background-line {
 					background-repeat: repeat-y;
 					background-position: 50px center;
@@ -144,7 +163,7 @@
 					}
 
 					.subway-icon.a-train {
-					background-color: #2850AD;
+					
 					}
 
 					/* blocks */
@@ -192,6 +211,10 @@
 					.text-row {
 					background-color: #ffffff;
 					}
+					
+          .text-row h1, {
+					color: #000000;
+					}
           
           .transport-row .content-inner       
 					{
@@ -219,6 +242,10 @@
 
 					.transport-row {
 					background-color: #ffffff;
+					}
+					
+					.coffee-row h3 {
+					color: #000000;
 					}
 
 					/* custom */
@@ -269,8 +296,7 @@
 					.food-row .food-img,
 					.coffee-row .coffee-img,
 					.drink-row .drink-img  {
-					background-repeat: no-repeat;
-					background-position: 250px center;
+					
 					}
 
 					.food-row h3 {
@@ -309,11 +335,17 @@
 
 
 					 @media only screen and (max-width:480px){
-						/* styles here*/
+						.logo {
+  					
+            }
+            
+            h1, h2, h4{
+              padding-left: 20px;
+            }
 					 }
 				</style>
 		</head>
-		<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+		<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" width="100%" style="margin:0px;padding:0px;">
 			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="content-wrapper">
 					 <tr>
 							 <td align="center" valign="top">
@@ -322,7 +354,7 @@
 										 <tr>
 											 <!-- left column-->
 												<td class="header header-left two-thirds" valign="top" align="left">
-												 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/76e1cf0c-ab97-4ea4-aadf-9cd30b193670.png">
+												 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/76e1cf0c-ab97-4ea4-aadf-9cd30b193670.png" class="logo">
 											 	</td>
 											 	<!-- /left column-->
 											 	<!-- right column-->
@@ -362,7 +394,7 @@
 											 <tr>
 													 <td align="center" valign="top">
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" width="600" class="content-inner" style="padding-top:0px; background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
+															 <table border="0" cellpadding="0" cellspacing="0" width="600" class="content-inner" style="padding-top:0px !important; background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																 <tr>
 																	 <td class="one-fifth">
 																			<img class="arrow-big" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png">
@@ -403,7 +435,7 @@
 											 <tr>
 													 <td align="center" valign="top">
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/5edeb00b-052b-4e4b-99f5-107fc9eea279.jpg');">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/5edeb00b-052b-4e4b-99f5-107fc9eea279.jpg') repeat-y 50px center;">
 																	 <tr>
 																		 <td class="one-sixth">
 																			<!-- arrow -->
@@ -414,7 +446,7 @@
 																		 </td>
 																	 </tr>
 																	 <!-- photo -->
-																	 <tr class="food-img" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/be7ea628-1100-4cae-9688-a62ca28b3d88.png') no-repeat right center;">
+																	 <tr class="food-img" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/be7ea628-1100-4cae-9688-a62ca28b3d88.png') no-repeat 250px center;">
 																		<td colspan="2" align="left" valign="top">
 																			<a href="http://www.groundsupportcafe.com">
 																				<h2>Bouchon Bakery</h2>
@@ -502,7 +534,7 @@
 											 <tr>
 													 <td align="center" valign="top">
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg');">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg') repeat-y 50px center;">
 																	 <tr>
 																		 <td class="one-sixth">
 																		 	<!-- arrow -->
@@ -513,7 +545,7 @@
 																		 </td>
 																	 </tr>
 																	 <!-- photo -->
-																	 <tr class="food-img" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a38ec60b-6dd7-4d13-9030-c91324810454.png');">
+																	 <tr class="food-img" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a38ec60b-6dd7-4d13-9030-c91324810454.png') no-repeat 250px center;">
 																		<td colspan="2" align="left" valign="top">
 																			<a href="http://numpangnyc.com/locations/grandcentral"><h2>Num Pang</h2></a>
 																			<a href="https://www.google.com/maps/preview?client=safari&q=grand+central+station&oe=UTF-8&ie=UTF-8&ei=bz72U9XaM4O2igLfqIDQCQ&ved=0CAgQ_AUoAQ">
@@ -537,7 +569,7 @@
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																	 <tr>
-																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92de2166-1ed9-4236-8a73-5167c3d7e4c5.png');">
+																		 <td class="transport-icon subway-icon" align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a9cfe69a-b08a-419f-bd4e-bbf2bb04078c.png') no-repeat 20px center;">
 																		 	<h5>MTA</h5>
 																		 </td>
 																		 <td>
@@ -558,7 +590,7 @@
 											 <tr>
 													 <td align="center" valign="top">
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg');">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg') repeat-y 50px center;">
 																	 <tr>
 																		 <td  class="one-sixth">
 																		 	<!-- arrow -->
@@ -569,7 +601,7 @@
 																		 </td>
 																	 </tr>
 																	 <!-- photo -->
-																	 <tr class="food-img" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/80ed63f6-c89a-47f6-bbb8-7164770d67f9.png');">
+																	 <tr class="food-img" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/80ed63f6-c89a-47f6-bbb8-7164770d67f9.png') no-repeat 250px center;">
 																		<td colspan="2" align="left" valign="top">
 																			<h2>Riverfront Park</h2>
 																			<a href="https://www.google.com/maps/preview?client=safari&oe=UTF-8&ie=UTF-8&fb=1&gl=us&cid=16815254261775588174&q=Riverfront+Park&ei=nDn2U96KC-PmiwK474HQAQ&ved=0CKMBEPwSMBA">
@@ -625,7 +657,7 @@
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																	 <tr>
-																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92de2166-1ed9-4236-8a73-5167c3d7e4c5.png');">
+																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a9cfe69a-b08a-419f-bd4e-bbf2bb04078c.png') no-repeat 20px center;">
 																		 	<h5>?</h5>
 																		 </td>
 																		 <td>
@@ -681,7 +713,7 @@
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																	 <tr>
-																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92de2166-1ed9-4236-8a73-5167c3d7e4c5.png');">
+																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a9cfe69a-b08a-419f-bd4e-bbf2bb04078c.png') no-repeat 20px center;">
 																		 	<h5>?</h5>
 																		 </td>
 																		 <td>
@@ -701,7 +733,7 @@
 											 <tr>
 													 <td align="center" valign="top">
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/7582bc8b-a800-4d9e-a064-338a61549773.jpg');">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/7582bc8b-a800-4d9e-a064-338a61549773.jpg') repeat-y 50px center;">
 																	 <tr>
 																		 <td align="left" class="one-sixth">
 																		 	<!-- arrow -->
@@ -712,7 +744,7 @@
 																		 </td>
 																	 </tr>
 																	 <!-- photo -->
-																	 <tr class="drink-img" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/e1ecdb39-c3be-409d-bcc4-89c8711dcc62.png');">
+																	 <tr class="drink-img" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/e1ecdb39-c3be-409d-bcc4-89c8711dcc62.png') no-repeat 250px center;">
 																		<td colspan="2" align="left" valign="top">
 																			<a href="http://thehopbeacon.com"><h2>The Hop</h2></a>
 																			<a href="https://www.google.com/maps/place/458+Main+St,+Beacon,+NY+12508/@41.5022949,-73.964752,15z/data=!4m2!3m1!1s0x89dd31615d1dfd13:0x58898f46c05ffe08">
@@ -735,7 +767,7 @@
 													 		<!-- content inner -->
 															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a386b2da-03ad-4e31-9519-1fbcb5715fba.jpg')repeat-y 50px center;">
 																	 <tr>
-																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92de2166-1ed9-4236-8a73-5167c3d7e4c5.png');">
+																		 <td class="transport-icon subway-icon a-train" align="center" valign="top" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a9cfe69a-b08a-419f-bd4e-bbf2bb04078c.png') no-repeat 20px center;">
 																		 	<h5>MTA</h5>
 																		 </td>
 																		 <td>
@@ -755,7 +787,7 @@
 											 <tr>
 													 <td align="center" valign="top">
 													 		<!-- content inner -->
-															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg');">
+															 <table border="0" cellpadding="0" cellspacing="0" class="content-inner background-line" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3b661f3d-67e4-486c-a232-3d4da9a78bae.jpg')repeat-y 50px center;">
 																	 <tr>
 																		 <td align="left" class="one-sixth">
 																		 	<!-- arrow -->
@@ -766,7 +798,7 @@
 																		 </td>
 																	 </tr>
 																	 <!-- photo -->
-																	 <tr class="food-img" style="background-image:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3436bfa4-c3a0-4147-bf03-7cd773161b6d.png');">
+																	 <tr class="food-img" style="background:url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/3436bfa4-c3a0-4147-bf03-7cd773161b6d.png') no-repeat 250px center;">
 																		<td colspan="2" align="left" valign="top">
 																			<a href="http://redroosterharlem.com"><h2>Red Rooster</h2></a>
 																			<a href="https://www.google.com/maps/preview?safe=off&client=safari&q=310+Lenox+Ave.+new+york+ny+10027&ie=UTF-8&hq=&hnear=0x89c2f60d2726a68f:0xc7a599bcfd32ae76,310+Lenox+Ave,+New+York,+NY+10027&gl=us&ei=WTn2U-HCL6bfigLPz4HQBA&ved=0CBwQ8gEwAA">

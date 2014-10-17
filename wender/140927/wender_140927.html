@@ -1,0 +1,902 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>*|MC:SUBJECT|*</title>
+	<!-- if you write your styles here you'll need to run them through a CSS inliner -->
+<style type="text/css">
+	/* global */
+	body {
+	height:100%;
+	width:100%;
+	min-width:100%;
+	background-color:#ffffff;
+	font-family:'helvetica-neue',helvetica,sans-serif;
+
+	margin: 0;
+	padding: 0;
+	}
+
+	.content-wrapper {
+		width:100%
+
+	}
+
+	a {
+	text-decoration: underline;
+	}
+	
+	a:visited {	
+	}
+
+	hr {
+		 background-color: #000000;
+		 color: #000000;
+		 border: none;
+		 height:1px;
+		margin: 30px 0px 30px 0px;
+	}
+
+	/* layout */
+	.content-inner {
+	width: 100%;
+	max-width: 600px;
+
+	}
+
+	.one-sixth {
+	width: 16%;
+	}
+
+	.one-fifth {
+	width: 20%;
+	}
+
+	.one-quarter {
+	width: 25%;
+	}
+
+	.one-third {
+	width: 33.333333333%;
+	}
+
+	.two-thirds {
+	width: 66.666666666%;
+	}
+
+	.five-sixths {
+	width: 84%;
+	}
+
+	.half-half {
+	width: 50%;
+	}
+
+	.padded-lg {
+	padding: 100px 0;
+	}
+
+	.padded-md {
+	padding: 50px 0;
+	}
+
+	.padded-0 {
+	padding: 0 !important;
+	}
+
+	/* type */
+	h1 {
+	display:block;
+	font-family:Helvetica, sans-serif;
+	font-size:120px;
+	font-style:normal;
+	font-weight:bold;
+	line-height:120px;
+	letter-spacing:normal;
+	margin:0px;
+	}
+
+	h2 {
+	color:#ffffff;
+	font-family:Helvetica, sans-serif;
+	font-size:50px;
+	font-style:normal;
+	font-weight:bold;
+	line-height:60px;
+	letter-spacing:normal;
+	margin:20px;
+	}
+
+	h3 {
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+	font-style:normal;
+	font-weight:bold;
+	line-height:140%;
+	letter-spacing:4px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+
+	}
+
+	h4 {
+	display:block;
+	font-family:Times, serif;
+	font-size:18px;
+	font-style:normal;
+	font-weight:normal; 
+	line-height:28px;
+	letter-spacing:2px;
+	color:#000000;
+	margin:0px;
+	padding:0px;
+	}
+
+	h5 {
+	display:block;
+	font-family:Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	font-weight:bold;
+	line-height:100%;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding-top:4px;
+	padding-left:1px;
+
+	}
+
+	h6 {
+	display:block;
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:40px;
+	font-style:normal;
+	font-weight:bold;
+	line-height:100%;
+	letter-spacing:6px;
+	text-align:center;
+	margin:20px;
+	}
+
+
+
+
+	/* components */
+  .archive {
+		font-size:12px;
+		color:gray;
+		padding-top:10px;
+	}
+	
+	.archive-link {
+		color:gray;
+		text-decoration: underline;
+	}
+
+
+  
+	.logo {
+		width: 100%;
+	}
+
+
+	/* blocks */
+	.email-container {
+	width: 100%;
+	}
+
+	.email-header {
+	width: 100%;
+	max-width: 600px;
+	padding: 0px 0px 70px 0px;;
+	}
+
+	.email-body {
+
+	}
+
+	.email-footer {
+	background-color: #000000;
+	color: #ffffff;
+	margin-top:100px;
+	}
+
+	.show-row {
+	background-color: #ffffff;
+	}
+
+	.show-row h1,
+	.show-row h3 {
+	color: #000000;
+	margin-bottom:20px;
+	}
+	
+	.show-row h1 {
+  	margin-top:-50px;
+  	
+	}
+
+	.show-row .arrow-big {
+	
+	}
+
+	.show-row .arrow {
+
+	}
+
+	.show-row .content-inner
+	{
+	padding:0px 0px 0px 0px;
+	}
+	
+	.show-row h3 {
+	color: #590dff;
+	}
+
+	.text-row {
+	background-color: #ffffff;
+	}
+
+	.text-row h1 {
+	color: #000000;
+	}
+	
+	.text-row h3 {
+	padding-bottom: 30px;
+	}
+
+	.food-row,
+	.coffee-row,
+	.drink-row {
+
+	}
+
+	.food-row {
+	background-color: #ff5a39;
+	}
+
+	.coffee-row {
+	background-color: #c1b393;
+	}
+
+	.drink-row {
+	background-color: #25ef93;
+	}
+
+	.transport-row {
+	background-color: #ffffff;
+	}
+	
+	.transport-icon {
+	padding:30px 0px 10px 0px;
+	}
+
+  .transport-row h3 {
+	color: #590dff;
+	padding-bottom:30px;
+	}
+  
+	.coffee-row h3 {
+	color: #000000;
+	}
+
+	/* custom */
+	.header {
+
+	}
+
+	.header-left {
+
+	}
+
+	.header-right {
+
+	}
+
+	.header h3 {
+	text-transform:lowercase;
+	line-height:100%;
+	padding-top:20px;
+	padding-bottom:0px;
+	}
+
+	.food-row h2,
+	.coffee-row h2,
+	.drink-row h2,
+	.food-row h4,
+	.coffee-row h4,
+	.drink-row h4
+	{
+	color: #ffffff;
+	margin-bottom:20px;
+	}
+
+	.food-row .content-inner,
+	.coffee-row .content-inner,
+	.drink-row .content-inner
+	{
+	padding:0px 0px 0px 0px;
+	}
+
+
+	.food-row .arrow,
+	.coffee-row .arrow,
+	.drink-row .arrow {
+	margin-left: 30px;
+	}
+
+  .food-row a,
+	.coffee-row a,
+	.drink-row a {
+	color:#ffffff;
+	}
+
+	.food-row .food-img,
+	.coffee-row .coffee-img,
+	.drink-row .drink-img	{
+
+	}
+
+	.food-row h3 {
+	color: #BF0000;
+	}
+
+	.coffee-row h3 {
+	color: #635742;
+	}
+
+	.drink-row h3 {
+	color: #3fa072;
+	}
+
+	.food-img {
+	background-repeat: no-repeat;
+	background-position: 250px center;
+	}
+
+	.email-footer h6 {
+	font-weight: normal;
+	}
+
+	.email-footer .fine-print {
+	text-align: center;
+	color: #606060;
+	letter-spacing: 3px;
+	padding:50px 0px 50px 0px;
+	}
+
+	.email-footer .fine-print h6{
+	padding-bottom:50px;
+	color:#590dff;
+	}
+
+	.share-tools {
+		padding-bottom:100px;
+
+	}
+
+
+	 @media only screen and (max-width:480px){
+		.logo {
+
+		}
+
+		h1, h2, h4{
+		}
+	 }
+</style>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="content-wrapper">
+<tr><td align="center" valign="top">
+  	
+  <!-- header -->
+  <table border="0" class="email-header">
+  	 <tr>
+  			<td class="header" valign="top" align="center">
+  			 	<a href="http://www.unti-tled.com"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/25ec3f71-372f-41b6-abc3-cd6676d892d1.jpg" class="logo"></a>
+  		 	</td>
+  
+  	 </tr>
+  </table>
+  <!-- /header -->
+
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+    	 <td align="center" valign="top">
+    	 		<!-- content inner -->
+    			 <table border="0" cellpadding="0" cellspacing="0" width="600" class="content-inner background-line padded-0" style="">
+    				 <tr>
+    					 <td align="center">
+    							<img class="arrow-big" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png">
+    					 </td>
+    				 </tr>
+             <tr>
+    					 <td>
+    						 
+    					 </td>
+    				 </tr>
+    			 </table>
+    			 <!-- /content inner -->
+    	 </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+
+  <!-- text row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="text-row content-row">
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="60" width="1"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <a href="http://37.media.tumblr.com/tumblr_lb01o6tn481qe0eclo1_r5_500.gif"><h1>wakeup</h1></a>
+        <h3>make your way to <br />the highline <br />however you want</h3>
+      </td>
+    </tr>
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="70" width="1"></td></tr>
+  </table>
+  <!-- /text row -->
+
+  <!-- coffee row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="coffee-row">
+    <tr>
+      <td align="center" valign="top">
+      
+        <!-- content inner -->
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner">
+          <!--<tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/b27d2bcb-36f4-416a-a052-0845e719abdb.png"></td></tr>-->
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/39932d58-19ac-42f8-8eb8-3104d24b303c.jpg" height="60" width="1"></td></tr>
+          <tr class="food-img" style="background: url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4231eebe-01bc-4778-8c5d-a15724cc86de.png') no-repeat 350px center;">
+        		<td colspan="2" align="center">
+        			<h3>GET COFFEE</h3>
+        			<a href="http://www.kavanyc.com"><h2>Kava Coffee</h2></a>
+        			<a href="https://www.google.com/maps/place/Kava+Cafe/@40.73897,-74.007904,15z/data=!4m2!3m1!1s0x0:0xc776a2f6091049b1?sa=X&ei=HzUkVO-IGO3figL-ioCwAQ&ved=0CIkBEPwSMAo"><h4>803 Washington St</h4></a>
+        		</td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/39932d58-19ac-42f8-8eb8-3104d24b303c.jpg" height="60" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+        
+      </td>
+    </tr>
+  </table>
+  <!-- /coffee row -->
+  
+  <!-- transport row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transport-row">
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="60" width="1"></td></tr>
+    <tr><td align="center" class="transport-icon"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/be01ef9c-b437-4ce6-8592-28fd831bf597.png"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <h3>UP Highline stairs at Gansevoort</h3>
+      </td>
+    </tr>
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+  </table>
+  <!-- /transport inner -->
+    
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>UNDER THE STANDARD</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/01816203-b634-471f-bd6e-aa546ee74b43.jpeg" width="600">
+          	  <a href="http://unti-tled.com/current/josh_kline-highline/"><h1>Josh Kline: Skittles</h1></a>
+          	  <a href="https://www.google.com/maps/place/High+Line,+New+York,+NY+10014/@40.7408536,-74.0080423,18z/data=!3m1!4b1!4m2!3m1!1s0x89c259c05d5dcae5:0x8cee2ca2082816ac"><h4>Highline @13th St</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>UNDER THE OVERPASS</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/5c2263d6-9487-4348-a24d-4585d9765940.jpeg" width="600">
+          	  <a href="http://unti-tled.com/current/fischli-weiss_highline/"><h1>Fischli & Weiss</h1></a>
+          	  <a href="https://www.google.com/maps/place/4059+High+Line,+Chelsea+Market+Baskets,+New+York,+NY+10011/@40.7428102,-74.0073868,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259c0bb7d5d4d:0x4ca3ee3d11038832"><h4>Highline @14th St</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="70" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+    
+  <!-- food row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="food-row">
+    <tr>
+      <td align="center" valign="top">
+      
+        <!-- content inner -->
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner">
+          <!--<tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/de3eab5e-5bc0-4da4-a8ea-33829b14631b.png"></td></tr>-->
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/58536b36-198f-4d78-90b3-8d52a5ca8eac.jpg" height="60" width="1"></td></tr>
+          <tr class="food-img" style="background: url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/9f846fc9-f1e4-4474-8b73-e545eca909a0.png') no-repeat 20px center;">
+        		<td colspan="2" align="center">
+        			<h3>Popsicle Break</h3>
+        			<a href="http://www.peoplespops.com/peoples_pops.html"><h2>People's Pops</h2></a>
+        			<a href="https://www.google.com/maps/preview?ll=40.743063,-74.007512&z=14&t=m&hl=en-US&gl=US&mapclient=embed&q=40°44%2735.1%22N+74°00%2726.9%22W%4040.743073,-74.007487"><h4>Highline @14th St</h4></a>
+        		</td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/58536b36-198f-4d78-90b3-8d52a5ca8eac.jpg" height="60" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+        
+      </td>
+    </tr>
+  </table>
+  <!-- /food row -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="60" width="1"></td></tr>
+          <tr><td align="center"><h3>HEAD NORTH</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/a7af2a20-06a1-4aa2-bb7f-1725761a5426.jpeg" width="600">
+          	  <a href="http://unti-tled.com/current/louise-lawler_highline/"><h1>Louise Lawler</h1></a>
+          	  <a href="https://www.google.com/maps/place/456+High+Line,+New+York,+NY+10011/@40.7449389,-74.0069228,18z/data=!3m1!4b1!4m2!3m1!1s0x89c259c7675aa72d:0xb804edc1bed4492b"><h4>Highline @18th St</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+
+ 
+  <!-- transport row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transport-row">
+    <tr><td align="center" class="transport-icon"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/e49878d0-8c9a-4ad4-8905-25393ed80977.png"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <h3>DOWN stairs at 18th</h3>
+      </td>
+    </tr>
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+  </table>
+  <!-- /transport inner -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>GO SEE</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/78e9ba28-9549-4083-a8a4-f86a83b8cb9e.jpg" width="600">
+          	  <a href="http://unti-tled.com/current/nick_cave-jack-shainman/"><h1>Nick Cave #1</h1></a>
+          	  <a href="http://www.jackshainman.com"><h4>Jack Shainman</h4></a>
+          	  <a href="https://www.google.com/maps/place/513+W+20th+St,+New+York,+NY+10011/@40.7463679,-74.006261,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259b87933947b:0x4ebc167416b41906"><h4>513 W 20th St</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- transport row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transport-row">
+    <tr><td align="center" class="transport-icon"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/be01ef9c-b437-4ce6-8592-28fd831bf597.png"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <h3>UP stairs at 20th</h3>
+      </td>
+    </tr>
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+  </table>
+  <!-- /transport inner -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>GO SEE</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/da58f903-6ba8-469b-951a-ca5756a6ade0.jpeg" width="600">
+          	  <a href="http://unti-tled.com/current/ed-ruscha_highline/"><h1>Ed Ruscha</h1></a>
+          	  <a href="https://www.google.com/maps/place/High+Line,+New+York,+NY+10011/@40.7470603,-74.0053419,18z/data=!3m1!4b1!4m7!1m4!3m3!1s0x89c259c0bb7d5d4d:0x4ca3ee3d11038832!2s4059+High+Line,+Chelsea+Market+Baskets,+New+York,+NY+10011!3b1!3m1!1s0x89c259b86b664143:0x126d1a4745d45ce6"><h4>Highline @22nd St</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- transport row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transport-row">
+    <tr><td align="center" class="transport-icon"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/e49878d0-8c9a-4ad4-8905-25393ed80977.png"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <h3>DOWN stairs at 22nd</h3>
+      </td>
+    </tr>
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+  </table>
+  <!-- /transport inner -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>GO SEE</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/7e36d6a6-1fee-4ff9-97d7-ba035d0d7856.jpg" width="600">
+          	  <a href="http://unti-tled.com/current/roger-hoirns_luhring-augustine/"><h1>Rogier Hiorns</h1></a>
+          	  <a href="http://www.luhringaugustine.com"><h4>Luhring Augustine</h4></a>
+          	  <a href="https://www.google.com/maps/place/531+W+24th+St,+New+York,+NY+10011/@40.7492057,-74.0049504,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259b79342707d:0x2174bb7f1e322b00"><h4>531 W 24th St</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>GO SEE</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/78e9ba28-9549-4083-a8a4-f86a83b8cb9e.jpg" width="600">
+          	  <a href="http://unti-tled.com/current/nick_cave-jack-shainman/"><h1>Nick Cave #2</h1></a>
+          	  <a href="http://www.jackshainman.com"><h4>Jack Shainman</h4></a>
+          	  <a href="https://www.google.com/maps/place/Jack+Shainman+Gallery+-+24th+Street/@40.748736,-74.005183,15z/data=!4m2!3m1!1s0x0:0x317f48b54406aa0d?sa=X&ei=rHsjVPaOK-KEjAL-74CwCQ&ved=0CHkQ_BIwCg"><h4>524 West 24th</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="70" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- food row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="food-row">
+    <tr>
+      <td align="center" valign="top">
+      
+        <!-- content inner -->
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner">
+          <!--<tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/de3eab5e-5bc0-4da4-a8ea-33829b14631b.png"></td></tr>-->
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/58536b36-198f-4d78-90b3-8d52a5ca8eac.jpg" height="60" width="1"></td></tr>
+          <tr class="food-img" style="background: url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4339867b-9166-406c-9397-4363c65f92d2.png') no-repeat 380px center;">
+        		<td colspan="2" align="center">
+        			<h3>Lunch</h3>
+        			<a href="http://www.theredcat.com/redcat.php"><h2>Red Cat</h2></a>
+        			<a href="https://www.google.com/maps/place/227+10th+Ave,+New+York,+NY+10011/@40.748122,-74.00419,15z/data=!4m2!3m1!1s0x89c259b828440a33:0x3ea3860dd29e2763?sa=X&ei=GnwjVKmtEKevjALv_IDIAw&ved=0CB8Q8gEwAA"><h4>227 10th Ave</h4></a>
+        		</td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/58536b36-198f-4d78-90b3-8d52a5ca8eac.jpg" height="60" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+        
+      </td>
+    </tr>
+  </table>
+  <!-- /food row -->
+
+  
+  <!-- transport row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transport-row">
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="60" width="1"></td></tr>
+    <tr><td align="center" class="transport-icon"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/be01ef9c-b437-4ce6-8592-28fd831bf597.png"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <h3>UP stairs at 26th</h3>
+      </td>
+    </tr>
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="100" width="1"></td></tr>
+  </table>
+  <!-- /transport inner -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>GO SEE</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/12eda81b-2070-4bdb-a2d9-db6ab54c732c.jpeg" width="600">
+          	  <a href="http://unti-tled.com/current/antoine-catala_highline/"><h1>Antoine Catala</h1></a>
+          	  <a href="https://www.google.com/maps/place/High+Line,+New+York,+NY+10001/@40.7489953,-74.003935,18z/data=!3m1!4b1!4m7!1m4!3m3!1s0x89c2598b8e416f83:0xe87d82a1014b2f62!2s47+Wooster+St,+New+York,+NY+10013!3b1!3m1!1s0x89c259b79b890d0b:0xa53f0d427f31626c"><h4>Highline @ 26th</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="70" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- show row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="show-row">
+    <tr>
+      <td align="center" valign="top">
+    
+        <!-- content inner --> 
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner" style="">
+          <!--<tr><td align="center" valign="top"><img class="arrow" alt="arrow" src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/23505891-8631-47c6-a2a9-b101069e5d8e.png"></td></tr>-->
+          <tr><td align="center"><h3>ON TO THE NEW SECTION!</h3></td></tr>
+          <tr>
+            <td align="left" colspan="2" valign="top" class="">
+              <img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/bf4bed49-be3e-4f58-a17e-704ee7771dc4.jpg" width="600">
+          	  <a href="http://art.thehighline.org/project/adrianvillarrojas/"><h1>Adri&aacute;n Villar</h1></a>
+          	  <a href="https://www.google.com/maps/place/307+High+Line,+New+York,+NY+10001/@40.7552967,-74.0057086,17z/data=!3m1!4b1!4m6!1m3!3m2!1s0x89c259c7840fb4e5:0x583f615c850a3c91!2sThe+High+Line!3m1!1s0x89c259b59ab92587:0x9160743f7b5a8406"><h4>Brand New Rail Yards Section</h4></a>
+            </td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="70" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+    
+      </td>
+    </tr>
+  </table>
+  <!-- /show row -->
+  
+  <!-- drink row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="drink-row">
+    <tr>
+      <td align="center" valign="top">
+      
+        <!-- content inner -->
+        <table border="0" cellpadding="0" cellspacing="0" class="content-inner">
+          <!--<tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/de3eab5e-5bc0-4da4-a8ea-33829b14631b.png"></td></tr>-->
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/b3dc9503-d258-4e97-b0da-a9332d79b94e.jpg" height="60" width="1"></td></tr>
+          <tr class="food-img" style="background: url('https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/d8ba1faa-7e6c-4edd-8ae1-1d83e62fc891.png') no-repeat 0px center;">
+        		<td colspan="2" align="center">
+        			<h3>GET A DRINK (and a show?)</h3>
+        			<a href="http://m.mckittrickhotel.com/gallowgreen/"><h2 style="padding-bottom:0px;margin-bottom:0px;">Gallow's Green</h2></a>
+        			<a href="http://sleepnomorenyc.com/"><h3 style="color:white;padding-bottom:20px;letter-spacing:0px;font-size:20px;">(and Sleep No More?)</h3></a>
+        			<h4>
+        			  <a href="http://m.mckittrickhotel.com">McKittrick Hotel</a><br />
+                <a href="https://www.google.com/maps/preview?q=542+west+27th+street+new+york,+ny&client=safari&oe=UTF-8&hnear=542+W+27th+St,+New+York,+10001&gl=us&t=m&z=16">542 West 27th</a>
+              </h4>
+        		</td>
+          </tr>
+          <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/b3dc9503-d258-4e97-b0da-a9332d79b94e.jpg" height="60" width="1"></td></tr>
+        </table>
+        <!-- /content inner -->
+        
+      </td>
+    </tr>
+  </table>
+  <!-- /drink row -->
+  
+  <!-- text row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="text-row content-row">
+    <tr><td align="center"><img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/4823548a-3231-474d-aaed-c7552ab134d4.jpg" height="60" width="1"></td></tr>
+    <tr>
+      <td align="center" valign="top">
+        <a href="http://37.media.tumblr.com/tumblr_lb01o6tn481qe0eclo1_r5_500.gif"><h1>go home</h1></a>
+      </td>
+    </tr>
+    <tr><td align="center"></td></tr>
+  </table>
+  <!-- /text row -->
+
+ 
+  <!-- footer row -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-footer">
+    <tr>
+      <td align="center" valign="top">
+      
+      <!-- content inner -->
+      <table border="0" cellpadding="0" cellspacing="0" class="content-inner fine-print">
+      	 <tr>
+      			 <td colspan="3">
+      				 <h6>invite your friends</h6>
+      			 </td>
+      	 </tr>
+      	 <tr>
+      		 <td class="share-tools">
+      			 <a href="http://www.unti-tled.com">
+      			 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/bbf145de-f55b-4bac-b672-f77f4aa05e9a.png">
+      		 	</a>
+      		 </td>
+      		 <td class="share-tools">
+      			 <a href="https://twitter.com/_tled">
+      			 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/92ea86fb-4943-40c1-9b77-c56bc427f5d1.png">
+      		 	</a>
+      		 </td>
+      		 <td class="share-tools">
+      			 <a href="*|FORWARD|*">
+      			 	<img src="https://gallery.mailchimp.com/1a2ff75e095034fc6d0c19ef5/images/38ad78cc-ddd6-402d-9c7c-10d27686eda5.png">
+      		 	</a>
+      		 </td>
+      	 </tr>
+      	 <tr>
+      		 <td align="center" colspan="3">
+      			 <br>
+      			 <strong>send all love letters to:</strong><br>
+      			 *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*<br>
+      			 <br>
+      			 <a class="utilityLink" href="*|UNSUB|*">stop getting these emails</a><br>or <a class="utilityLink" href="*|UPDATE_PROFILE|*">update your preferences</a>&nbsp;<br>
+      			 <br>
+      			 *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+      		 </td>
+      	 </tr>
+      </table>
+      <!-- /content inner -->
+      
+      </td>
+    </tr>
+  </table>
+  <!-- /footer row -->
+
+</td></tr>
+</table>
+<!-- /content wrapper -->
+</body>
+</html>
